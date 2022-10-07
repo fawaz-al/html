@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <!-- 
+        Tag table
+        * table
+        * thead > mengambil semua bagian atas table
+        * tbody
+        * tfoot
+        * tr(table row) > agar si data mengisi ke bawah karena secara default td akan mengisi kesamping/column
+        * th(table header) > isi dari thead
+        * td(table data) > isi dari semua table
+     -->
+
+    <table border="5" style="background: #08c;" cellpadding="10">
+        <thead>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Kelas</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td style="background: #cad23cda;">Fulan</td>
+                <td>11 RPL</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Fulanah</td>
+                <td>11 RPL</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Fulan</td>
+                <td>11 RPL</td>
+            </tr>
+        </tbody>
+    </table><hr>
+
+    <table border="3" style="width: 30%; height: 500px;">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td rowspan="2" bgcolor="blue"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td ></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2" bgcolor="red"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
