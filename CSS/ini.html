@@ -1,0 +1,132 @@
+<!--
+di dalam css itu ada selector ( h1{} )
+didalam selector ada blok deklarasi ( { properti: value, } )
+di dalam blok deklarasi ada properti & value
+
+
+! Colouring
+ * RGB = Red,Green,Blue
+ * HEX = 
+
+? Background
+ * Bg color
+ * Bg attachment
+ * Bg repeat
+ * Bg shorthand
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ini CSS</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Nested CSS -->
+    <style>
+        /* selector body jarang digunakan */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: green;
+            display: flex;
+            justify-content: center;
+        }
+        /* .rgb{
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 4);
+        }
+        .hex{
+            width: 100px;
+            height: 100px;
+            background: #00FFFF;
+        }
+        .hsl{
+            width: 100px;
+            height: 100px;
+            background: hsl(315, 94%, 25%);
+        }
+        .card{
+            width: 300px;
+            height: 100px;
+            background-color: #939393;
+        } */
+        /* .img-bg{
+            width: 279px;
+            height: 181px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMTGdS4FZN0AWAahgNwZHBAoJq0yGBb5Tj9w&usqp=CAU);
+        } */
+        .gradient{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to top left, #00fc, #008000);
+        }
+        /* .repeat{
+            width: 279px;
+            height: 181px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMTGdS4FZN0AWAahgNwZHBAoJq0yGBb5Tj9w&usqp=CAU);
+            /* 
+            - repeat x -> looping gambar horizontal
+            - repeat y -> looping gambar vertikal
+            - no repeat -> gmbar tidak akan di repeat
+            - default -> gambar akan dilooping vertikal & horizontal
+            
+            background-repeat: no-repeat;
+        } */
+        /* .att{
+            width: 100vw;
+            height: 200px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMTGdS4FZN0AWAahgNwZHBAoJq0yGBb5Tj9w&usqp=CAU);
+            background-size: cover;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+        } */
+        /* .shorthand{
+            width: 279px;
+            height: 181px;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMTGdS4FZN0AWAahgNwZHBAoJq0yGBb5Tj9w&usqp=CAU) no-repeat center;
+            border: 1px solid floralwhite;
+        } */
+
+        /* sering
+        - background color (HSL, RGB, HEX)
+        - background-image
+        - background-repeat (no-repeat, repeat-x, repeat-y, repeat)
+        - background-attachment
+        - background position (left, right, center)
+        */
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <!-- Colouring CSS -->
+
+        <!-- RGB -->
+        <!-- <div class="rgb">Ini RGB</div> -->
+
+        <!-- HEX -->
+        <!-- <div class="hex">Ini HEX</div> -->
+
+        <!-- HSL -->
+        <!-- <div class="hsl">Ini HSL</div> -->
+
+        <!-- Background -->
+        <!-- <div class="card"></div> -->
+        <!-- <div class="img-bg"></div> -->
+        <!-- <div class="repeat"></div> -->
+        <!-- <div class="att"></div> -->
+        <!-- <div class="shorthand"></div> -->
+        <div class="gradient"></div>
+
+    </div>
+
+    <!-- <div class="content">
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nemo sit dolor, itaque, provident ipsum at similique laborum tempora, vel aperiam expedita eaque neque architecto corporis. Nobis animi vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, natus dolor sit consectetur deleniti corrupti in quae repellendus ab, omnis distinctio libero veniam tenetur eius totam dolore reiciendis illo quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam dignissimos odit optio deserunt, eligendi numquam laboriosam quaerat fuga aliquid sint quibusdam deleniti architecto nihil assumenda non repellendus ab eaque?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, natus. In ullam eos ducimus? Perspiciatis ipsam, necessitatibus, quos voluptates consequatur unde natus dolore quibusdam dicta rerum, suscipit non iusto cupiditate?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, omnis assumenda libero possimus minima dolores quisquam, tempore ab necessitatibus deserunt rem tempora, repudiandae vero rerum praesentium sit adipisci architecto ducimus?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia magnam sed corrupti ad ab nesciunt libero suscipit. Reiciendis odio atque esse, eligendi corrupti sit similique et assumenda, ex quia modi?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel ea provident reiciendis iste ratione, reprehenderit perferendis doloribus at voluptatem iusto totam aliquam autem, possimus obcaecati aspernatur a voluptates aut!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nemo sit dolor, itaque, provident ipsum at similique laborum tempora, vel aperiam expedita eaque neque architecto corporis. Nobis animi vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, natus dolor sit consectetur deleniti corrupti in quae repellendus ab, omnis distinctio libero veniam tenetur eius totam dolore reiciendis illo quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam dignissimos odit optio deserunt, eligendi numquam laboriosam quaerat fuga aliquid sint quibusdam deleniti architecto nihil assumenda non repellendus ab eaque?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, natus. In ullam eos ducimus? Perspiciatis ipsam, necessitatibus, quos voluptates consequatur unde natus dolore quibusdam dicta rerum, suscipit non iusto cupiditate?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, omnis assumenda libero possimus minima dolores quisquam, tempore ab necessitatibus deserunt rem tempora, repudiandae vero rerum praesentium sit adipisci architecto ducimus?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia magnam sed corrupti ad ab nesciunt libero suscipit. Reiciendis odio atque esse, eligendi corrupti sit similique et assumenda, ex quia modi?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel ea provident reiciendis iste ratione, reprehenderit perferendis doloribus at voluptatem iusto totam aliquam autem, possimus obcaecati aspernatur a voluptates aut!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nemo sit dolor, itaque, provident ipsum at similique laborum tempora, vel aperiam expedita eaque neque architecto corporis. Nobis animi vel mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, natus dolor sit consectetur deleniti corrupti in quae repellendus ab, omnis distinctio libero veniam tenetur eius totam dolore reiciendis illo quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam dignissimos odit optio deserunt, eligendi numquam laboriosam quaerat fuga aliquid sint quibusdam deleniti architecto nihil assumenda non repellendus ab eaque?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, natus. In ullam eos ducimus? Perspiciatis ipsam, necessitatibus, quos voluptates consequatur unde natus dolore quibusdam dicta rerum, suscipit non iusto cupiditate?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, omnis assumenda libero possimus minima dolores quisquam, tempore ab necessitatibus deserunt rem tempora, repudiandae vero rerum praesentium sit adipisci architecto ducimus?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia magnam sed corrupti ad ab nesciunt libero suscipit. Reiciendis odio atque esse, eligendi corrupti sit similique et assumenda, ex quia modi?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel ea provident reiciendis iste ratione, reprehenderit perferendis doloribus at voluptatem iusto totam aliquam autem, possimus obcaecati aspernatur a voluptates aut!</h2>
+    </div> -->
+ </body>
+ </html>
