@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+</head>
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to top right, #000000, #ffffffc7);
+        /* background: linear-gradient(to top right, #8f0e8f, #fbff00ea); */
+        color: #fff;
+        background-size: 300%;
+        animation: gradient 0.1s infinite alternate;
+    }
+
+
+
+    @keyframes gradient{
+        0%{
+            background-position: 0;
+        }
+        50%{
+            background-position: 25%;
+        }
+        75%{
+            background-position: 50%;
+        }
+        100%{
+            background-position: 0;
+        }
+    }
+</style>
+<body>
+    <h1>Background Animation</h1>
+</body>
+</html>
