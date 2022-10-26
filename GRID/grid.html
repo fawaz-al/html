@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid{
+            padding: 10px;
+            width: 80%;
+            display: grid;
+            background-color: #00f;
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap: 5px;
+        }
+        .grid div{
+            background: #ffa500;
+            padding: 50px;
+        }
+        .item1{
+            grid-column: 1/4;
+        }
+        .item2{
+            grid-column: 4;
+        }
+        .item3{
+            grid-column: 5;
+        }
+        .item4{
+            grid-column: 6;
+        }
+        .item5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: xx-large;
+            grid-column: 2/6;
+            grid-row: 2/4;
+        }
+        .item6{
+            grid-row: 0;
+        }
+        .item7{
+            grid-row: 3;
+        }
+        .item8{
+            grid-row: 4;
+        }
+        .item9{
+            grid-row: 4/4;
+            grid-column: 2/6;
+        }
+        .item10{
+            grid-column: 6/6;
+            grid-row: 2/5;
+        }
+        .item11{
+            grid-row: 5;
+            grid-column: 1/7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="item1">Brand</div>
+            <div class="item2">Nav 1</div>
+            <div class="item3">Nav 2</div>
+            <div class="item4">Nav 3</div>
+            <div class="item6">Sidebar 1</div>
+            <div class="item7">Sidebar 2</div>
+            <div class="item8">Sidebar 3</div>
+            <div class="item5">Content</div>
+            <div class="item9">News</div>
+            <div class="item10">A side</div>
+            <div class="item11">Footer</div>
+        </div>
+    </div>
+</body>
+</html>

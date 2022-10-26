@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background-color: #0000ff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* .container-fluid{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background-color: #0000ff;
+        } */
+        .item{
+            width: 200px;
+            height: 50px;
+            background: #808080;
+            margin: 10px;
+        }
+        .wrap{
+            width: 80%;
+            height: 500px;
+            background: #ffffffc7;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .block{
+            width: 300px;
+            height: 100px;
+            background: #000;
+            margin: 10px;
+        }
+        .area{
+            width: 80%;
+            height: 200px;
+            margin: 10px;
+            border: 1px #000 solid;
+            display: flex;
+            justify-content: end;
+        }
+        .brand{
+            width: 300px;
+            height: 100%;
+            background: #ff0000;
+        }
+        .search{
+            width: 300px;
+            height: 100%;
+            background: #ff0;
+        }
+        .login{
+            width: 300px;
+            height: 100%;
+            background: #f0e68c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flexbox vs Grid -->
+
+    <!-- Flexbox atau Flex -->
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <!-- Flex Direction
+    * Row (default) : Item akan tampil horizontal kiri ke kanan
+    * Row-Reverse : Item akan tampil horizontal kanan ke kiri
+    * Column : Item akan tampil horizontal dari atas ke bawah
+    * Column-Reverse : Item akan vertical dari bawah ke atas
+    -->
+
+    <!-- Wrapping -->
+    <!-- Flex Wrapping
+    Secara default dia akan membuat sebuah row dan meresize ukuran elemen yang ada di dalamnya
+    * nowrap (default) 
+    * wrap 
+    * wrap-reverse 
+    -->
+
+    <div class="container">
+        <div class="wrap">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+    <!-- Alignment
+    * Justify-content : memindahkan elemen secara horizontal
+    * Align-items : memindahkan elemen secara vertical
+    ? justify-content :
+    * start : default/semua elemen akan mulai dari kiri
+    * center : semua elemen akan pindah ke tengah horizontal
+    * end : semua elemen akan pindah ke bawah
+    -->
+
+    <div class="container">
+        <div class="area">
+            <div class="brand"></div>
+            <div class="search"></div>
+            <div class="login"></div>
+        </div>
+    </div>
+</body>
+</html>

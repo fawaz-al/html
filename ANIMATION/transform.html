@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 
+        +,+ = ke kanan bawah
+        +,- = ke kanan atas
+        -,- = ke kiri atas
+        -,+ = ke kiri bawah
+        transisi untuk ngedelay pergerakan
+        +background akan merubah warna ketika bergerak
+        */
+        .translate{
+            width: 400px;
+            height: 200px;
+            background: #0000ff;
+            transition: 2s;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .translate:hover{
+            transform: translate(-80px, 200px);
+            background: #00ffff;
+        }
+        .rotate{
+            width: 400px;
+            height: 200px;
+            background: #0000ff;
+            transition: 3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .rotate:hover{
+            transform: rotate(90deg);
+            background: #00ffff;
+        }
+        .scale{
+            width: 400px;
+            height: 200px;
+            background: #0000ff;
+            transition: 3s;
+            transition-delay: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .scale:hover{
+            transform: scale(2, 3);
+            background: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Transform ada 2 =
+    1 2d
+        * Translate
+        * Rotate
+        * Scale
+        * Skew
+        * Matriks
+    2 3d
+        * Rotate
+    -->
+
+    <!-- Contoh animasi Translate -->
+    <div class="container">
+        <div class="translate">
+            <h3>Ini Translate Hover</h3>
+        </div>
+    </div>
+
+    <!-- Contoh animasi Rotate -->
+    <div class="container">
+        <div class="rotate">
+            <h3>Ini Rotate Hover</h3>
+        </div>
+    </div>
+
+    <!-- Contoh animasi Scale -->
+    <div class="container">
+        <div class="scale">
+            <h3>Ini Scale Hover</h3>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fefefe;
+        }
+        .animasi1{
+            width: 900px;
+            height: 500px;
+            background: #0000ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: change-bg .1s infinite alternate;
+            border-radius: 20px;
+        }
+        /* @keyframes change-bg{
+            from {
+                background-color: #0000ff;
+            }
+            to {
+                background: #00ff00;
+            }
+        } */
+        .animasi2{
+            width: 100px;
+            height: 100px;
+            background: #ff0000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: bounce .1s infinite alternate;
+        }
+        @keyframes change-bg{
+            0% {
+                background-color: #0000ff;
+            }
+            50% {
+                background-color: #00ffff;
+            }
+            100% {
+                background-color: #800080;
+            }
+        }
+        @keyframes bounce{
+            from {
+                transform: translate();
+            }
+            to {
+                transform: translate(0, -300px);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animasi1">
+            <h3>Ini Animasi 1</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="animasi2">
+        </div>
+    </div>
+</body>
+</html>
