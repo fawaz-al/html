@@ -243,10 +243,155 @@
         <td>test</td>
         <td>test</td>
       </tr>
-    </table>
+    </table><hr>
+    <div class="container">
+      <h1>Forms</h1>
+
+      <div class="card p-4">
+        <form action="#" method="post">
+          <label>Username</label>
+          <input type="text" class="form-control">
+          <label>Message</label>
+          <textarea class="form-control" rows="10"></textarea>
+          <label>Choose Gender</label>
+          <div class="form-check">
+            <label>Male</label>
+            <input type="checkbox" class="form-check-input">
+          </div>
+          <div class="form-check">
+            <label>Female</label>
+            <input type="checkbox" class="form-check-input">
+          </div>
+          <label>Example Range</label>
+          <input type="range" class="form-control">
+
+          <div class="input-grup mt-4">
+            <span class="input-grup-text">@</span>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="input-grup mt-4">
+            <span class="input-grup-text">Firstname & Lastname</span>
+            <input type="text" class="form-control">
+            <input type="text" class="form-control">
+            <input type="number" class="form-control" maxlength="8">
+          </div>
+
+          <div class="input-grup mt-4">
+            <input type="date" class="form-control" placeholder="start date">
+            <span class="input-grup-text bg-primary text-white">To</span>
+            <input type="date" class="form-control" placeholder="end date">
+          </div>
+
+          <div class="form-grup">
+            <label for="" class="form-label">Username</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-grup">
+            <label for="" class="form-label">Email</label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="form-floating mt-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@gmail.com">
+            <label for="floatingInput">Email Address</label>
+          </div>
+
+          <div class="form-floating mt-4">
+            <input type="text" class="form-control" id="floatingInput" placeholder="username">
+            <label for="floatingInput">Username</label>
+          </div>
+
+          <div class="form-floating mt-4">
+            <input type="text" class="form-control" id="floatingInput" placeholder="username" required>
+            <label for="floatingInput">Username</label>
+          </div>
+          <button type="submit" class="btn btn-success mt-4">Registerasi</button>
+
+          <div class="row g-3">
+            <div class="col-sm-7">
+              <input type="text" class="form-control" placeholder="City" aria-label="City">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="State" aria-label="State">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+            </div>
+          </div>
+
+          <form class="row gy-2 gx-3 align-items-center">
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingInput">Name</label>
+              <input type="text" class="form-control" id="autoSizingInput" placeholder="username">
+            </div>
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+              </div>
+            </div>
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                <label class="form-check-label" for="autoSizingCheck">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+
+        </form>
+      </div>
+    </div><hr>
+
+    <div class="container">
+      <p>Layouting</p>
+      <p class="text-muted">Layout Grid</p>
+      <div class="row">
+        <div class="col bg-primary">
+          <p>Column 1</p>
+        </div>
+        <div class="col bg-danger">
+          <p>Column 1</p>
+        </div>
+        <div class="col bg-warning">
+          <p>Column 1</p>
+        </div>
+      </div>
+
+    </div><hr>
+
+    
   </div>
 
+  <!-- Figure Caption Bootstrap -->
+  <!-- <p class="text-muted">Figure</p>
+  <figure class="figure">
+    <img src="https://apod.nasa.gov/apod/image/2202/AuroraPillars_Correia_960.jpg" class="figure-img img-fluid rounded" alt="figure">
+    <figcaption class="figure-caption">Caption gambar default</figcaption>
+  </figure>
+  <p class="text-muted">Figure Fluid</p>
+  <figure class="figure">
+    <img src="https://apod.nasa.gov/apod/image/2202/AuroraPillars_Correia_960.jpg" class="figure-img img-fluid rounded" alt="figure fluid">
+  <figcaption class="figure-caption text-end">Caption gambar di kiri</figcaption>
+  </figure> -->
 
+  <!-- Navbar Bootstrap -->
   <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -291,5 +436,31 @@
     <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div> -->
+
+  <!-- <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+
+    <a class="btn btn-primary" href="#" role="button">Link</a>
+    <button class="btn btn-primary" type="submit">Button</button>
+    <input class="btn btn-primary" type="button" value="Input">
+    <input class="btn btn-primary" type="submit" value="Submit">
+    <input class="btn btn-primary" type="reset" value="Reset">
+
+    <button type="button" class="btn btn-outline-primary mt-5">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button> -->
 </body>
 </html>

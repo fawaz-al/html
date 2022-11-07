@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-blur-black {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panel-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .6);
+    backdrop-filter: blur(2px);
+}
+
+.text-title {
+    font-size: 1.7em;
+}
+.second{
+    height: 70vh;
+}
+.menu{
+    width: 100vw;
+    height: auto;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.panorama{
+    width: 100vw;
+    height: 100vh;
+}
+.booking{
+    width: 100vw;
+    height: auto;
+}
+.contact{
+    width: 100vw;
+    height: 60vh;
+    background-image: url(https://asset.kompas.com/crops/f4_gIxZ9PlhETxkkUoyCCtfYrHA=/314x71:5612x3604/750x500/data/photo/2022/08/14/62f8d5b899530.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:767px) {
+    .img-brand img {
+        display: none;
+    }
+    .img-uwuh{
+        display: none;
+    }
+    .contact{
+        height: auto;
+    }
+}

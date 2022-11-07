@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDN Resto</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-blur-black fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="#">IDN <span class="text-info">Café</span> & <span
+          class="text-info">Resto</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Panorama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="panel-content  d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="desc text-white" data-aos="fade-right" data-aos-duration="3000">
+              <p class="text-title mb-4 text-uppercase text-white">IDN <span class="text-info">Café</span> & <span
+                  class="text-info">Resto</span></p>
+              <p class="text-white">Original Taste From Nusantara</p>
+              <p class="text-white">Rasakan cita rasa sesungguhnya tradisi nenek moyang asli Nusantara, yang masih
+                terjaga dan selalu diwariskan dari masa ke masa</p>
+              <a href="#" class="btn btn-info rounded p-3 text-uppercase">Explore Now</a>
+            </div>
+          </div>
+          <div class="col-md-6 img-brand d-flex justify-content-center">
+            <img src="img.png" alt="rendang" class="image-fluid" data-aos="fade-left" data-aos-duration="2000">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="second d-flex align-items-center" id="second">
+    <div class="container d-flex align-items-center p-5" data-aos="flip-down" data-aos-duration="3000">
+      <div class="col-md-4">
+        <!-- Image -->
+        <img src="pngwing.png" alt="w'dank uwuh" class="img-fluid img-uwuh">
+      </div>
+      <div class="col-md-8">
+        <p class="text-title text-info">Tahukan Kamu?</p>
+        <p>Wedang uwuh adalah minuman dengan bahan-bahan yang berupa dedaunan mirip dengan rempah. Dalam bahasa Jawa,
+          Wedang berarti minuman yang diseduh, sedangkan uwuh berarti sampah. Wedang uwuh disajikan panas atau hangat
+          memiliki rasa manis dan pedas dengan warna merah cerah dan aroma harum. Rasa pedas karena bahan Jahe,
+          sedangkan warna merah karena adanya Secang. Wedang uwuh ini adalah minuman khas dari Yogyakarta. Pada awalnya
+          Wedang Uwuh masih dalam bentuk bahan utuh berupa rempah-rempah asli, tetapi seiring perkembangan zaman dan
+          kebutuhan akan kepraktisan, saat ini Wedang Uwuh sudah dikembangkan menjadi dalam bentuk instan, maupun bentuk
+          celup.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="panel-content">
+      <div class="container p-4">
+        <p class="text-title text-center text-white mb-3">
+          Daftar Menu IDN Café & Resto
+        </p>
+        <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase active" id="pills-makanan-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-makanan" type="button" role="tab" aria-controls="pills-makanan"
+              aria-selected="true">makanan</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="pills-minuman-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-minuman" type="button" role="tab" aria-controls="pills-minuman"
+              aria-selected="false">minuman</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="pills-snacks-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-snacks" type="button" role="tab" aria-controls="pills-snacks"
+              aria-selected="false">snacks</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-makanan" role="tabpanel" aria-labelledby="pills-makanan-tab">
+            <div class="card-menu mt-3">
+              <div class="row">
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ketoprak_Boplo.JPG/375px-Ketoprak_Boplo.JPG"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="ketoprak">
+                    <div class="card-body">
+                      <p class="text-bold">Ketoprak</p>
+                      <p class="card-text">Ketoprak merupakan makanan berbumbu kuah kacang yang bisa dengan mudah
+                        ditemukan di kota Jakarta.</p>
+                      <p class="text-success">IDR. 10,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img src="https://www.jagel.id/api/listimage/v/Nasi-Campur-0-6256063e67c119f4.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="nasi-campur">
+                    <div class="card-body">
+                      <p class="text-bold">Nasi Campur</p>
+                      <p class="card-text">Nasi campur adalah salah satu masakan khas Indonesia. Makanan ini terdiri
+                        nasi putih yang dihidangkan bermacam-macam lauk.</p>
+                      <p class="text-success">IDR. 20,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Mie_Kocok_Bandung.jpg/375px-Mie_Kocok_Bandung.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="mie-kocok">
+                    <div class="card-body">
+                      <p class="text-bold">Mie Kocok</p>
+                      <p class="card-text">Mi Kocok memiliki rasa yang lebih gurih dan pekat dari Bakso dan itu menjadi
+                        pembeda dan ciri khas dari Mi Kocok.</p>
+                      <p class="text-success">IDR. 30,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nasi_Goreng_Sosis.jpg/375px-Nasi_Goreng_Sosis.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="nasi-goreng">
+                    <div class="card-body">
+                      <p class="text-bold">Nasi Goreng</p>
+                      <p class="card-text">Nasi goreng adalah makanan berupa nasi yang digoreng dan dicampur dalam
+                        minyak goreng, margarin atau mentega.</p>
+                      <p class="text-success">IDR. 13,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Gado_gado.jpg/375px-Gado_gado.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="gado-gado">
+                    <div class="card-body">
+                      <p class="text-bold">Gado-gado</p>
+                      <p class="card-text">Gado-gado adalah makanan khas Jakarta berisi sayur-sayuran rebus, irisan
+                        telur & tahu, dan ditaburi bawang goreng & kerupuk.</p>
+                      <p class="text-success">IDR. 36,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mi_ayam_jamur.JPG/375px-Mi_ayam_jamur.JPG"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="mie-ayam">
+                    <div class="card-body">
+                      <p class="text-bold">Mie Ayam</p>
+                      <p class="card-text">Mie Ayam adalah hidangan Indonesia yang terbuat dari mie gandum, dibumbui
+                        dengan daging ayam yang biasanya dipotong dadu.</p>
+                      <p class="text-success">IDR. 20,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bakso_mi_bihun.jpg/375px-Bakso_mi_bihun.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="bakso">
+                    <div class="card-body">
+                      <p class="text-bold">Bakso</p>
+                      <p class="card-text">Bakso adalah jenis bola daging yang ditemukan di Indonesia. Bakso umumnya
+                        dibuat dari campuran daging sapi giling dan tepung tapioka.</p>
+                      <p class="text-success">IDR. 19,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://asset.kompas.com/crops/nsueiJRoh-BTF94-Y71Nv0f3Zj0=/3x0:700x465/780x390/data/photo/2020/12/30/5fec5602f116e.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="ayam-bakar">
+                    <div class="card-body">
+                      <p class="text-bold">Ayam Bakar</p>
+                      <p class="card-text">Ayam bakar adalah sebuah hidangan Asia Tenggara Maritim, terutama hidangan
+                        Indonesia atau Malaysia, dari ayam yang dipanggang di atas arang.</p>
+                      <p class="text-success">IDR. 25,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img src="https://www.bango.co.id/gfx/tips/tips_1424435038.jpg?v=2"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="mangut-lele">
+                    <div class="card-body">
+                      <p class="text-bold">Mangut Lele</p>
+                      <p class="card-text">Mangut lele adalah kuliner Yogyakarta. Masakan Jawa ini menggunakan bahan
+                        dasar ikan lele dan selalu disajikan sebagai hidangan bagi para raja Keraton.</p>
+                      <p class="text-success">IDR. 25,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-minuman" role="tabpanel" aria-labelledby="pills-minuman-tab">
+            <div class="card-menu mt-3">
+              <div class="row">
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://www.masakapahariini.com/wp-content/uploads/2018/12/shutterstock_338815997-780x440.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="wedang-jahe">
+                    <div class="card-body">
+                      <p class="text-bold">Wedang Jahe</p>
+                      <p class="card-text">Wedang Jahe adalah hidangan minuman sari jahe tradisional dari daerah Pulau Jawa, Indonesia yang disajikan hangat atau panas.</p>
+                      <p class="text-success">IDR. 10,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img src="https://asset.kompas.com/crops/5T7Aiq112kRUaNp8O6H27IJrEBk=/0x30:500x363/750x500/data/photo/2020/07/24/5f1a9666ea323.jpeg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="bajigur">
+                    <div class="card-body">
+                      <p class="text-bold">Bajigur</p>
+                      <p class="card-text">Bajigur adalah minuman tradisional khas masyarakat Sunda. Bahan utamanya adalah gula aren dan santan.</p>
+                      <p class="text-success">IDR. 12,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://akcdn.detik.net.id/visual/2021/03/20/jamu-kunyit-asemfoto-maelsumaelonrendercom_11.jpeg?w=480&q=90"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="jamu">
+                    <div class="card-body">
+                      <p class="text-bold">Jamu</p>
+                      <p class="card-text">Jamu adalah sebutan untuk obat tradisional dari Indonesia. Belakangan populer dengan sebutan herba atau herbal.</p>
+                      <p class="text-success">IDR. 16,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="lemon-tea.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="lemon-tea">
+                    <div class="card-body">
+                      <p class="text-bold">Lemon Tea</p>
+                      <p class="card-text">Lemon tea adalah teh yang menyegarkan dimana perasan lemon atau irisan lemon ditambahkan dalam teh.</p>
+                      <p class="text-success">IDR. 12,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://cdn.idntimes.com/content-images/post/20151027/kopiluwak_600x400.gif"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="kopi-luwak">
+                    <div class="card-body">
+                      <p class="text-bold">Kopi Luwak</p>
+                      <p class="card-text">Kopi luwak adalah seduhan kopi menggunakan biji kopi yang diambil dari sisa kotoran luwak/musang kelapa.</p>
+                      <p class="text-success">IDR. 36,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Iced_Tea_from_flickr.jpg/1200px-Iced_Tea_from_flickr.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="ice-tea">
+                    <div class="card-body">
+                      <p class="text-bold">Ice Tea</p>
+                      <p class="card-text">Es teh atau Teh es adalah teh yang didinginkan dengan es batu. Es teh sering kali ditambahkan rasa seperti melati, dan buah-buahan.</p>
+                      <p class="text-success">IDR. 8,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://resepkoki.id/wp-content/uploads/2020/02/Resep-Teh-Tarik.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="teh-tarik">
+                    <div class="card-body">
+                      <p class="text-bold">Teh Tarik</p>
+                      <p class="card-text">Teh tarik adalah minuman manis berupa campuran teh dan susu yang lazim ditemukan di daerah Asia Tenggara, khususnya Indonesia.</p>
+                      <p class="text-success">IDR. 10,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://asset.kompas.com/crops/LgGmDBxglevUdnCm4fWkEIkVy-U=/0x0:739x493/750x500/data/photo/2020/01/29/5e3187c1ac05f.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="es-kelapa">
+                    <div class="card-body">
+                      <p class="text-bold">Es Kelapa</p>
+                      <p class="card-text">Es kelapa muda adalah minuman segar penyejuk dahaga yang terbuat dari daging & air kelapa yang masih muda, minuman ini berasal dari Indonesia</p>
+                      <p class="text-success">IDR. 20,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img src="https://kabarindah.com/wp-content/uploads/2021/03/cendol-dawet.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="es-dawet">
+                    <div class="card-body">
+                      <p class="text-bold">Es Dawet</p>
+                      <p class="card-text">Dawet merupakan minuman khas Jawa yang terbuat dari tepung beras ataupun tepung beras ketan, disajikan dengan es parut serta gula merah cair dan santan.</p>
+                      <p class="text-success">IDR. 15,000/gelas</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-snacks" role="tabpanel" aria-labelledby="pills-snacks-tab">
+            <div class="card-menu mt-3">
+              <div class="row">
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ketoprak_Boplo.JPG/375px-Ketoprak_Boplo.JPG"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="ketoprak">
+                    <div class="card-body">
+                      <p class="text-bold">Ketoprak</p>
+                      <p class="card-text">Ketoprak merupakan makanan berbumbu kuah kacang yang bisa dengan mudah
+                        ditemukan di kota Jakarta.</p>
+                      <p class="text-success">IDR. 10,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img src="https://www.jagel.id/api/listimage/v/Nasi-Campur-0-6256063e67c119f4.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="nasi-campur">
+                    <div class="card-body">
+                      <p class="text-bold">Nasi Campur</p>
+                      <p class="card-text">Nasi campur adalah salah satu masakan khas Indonesia. Makanan ini terdiri
+                        nasi putih yang dihidangkan bermacam-macam lauk.</p>
+                      <p class="text-success">IDR. 20,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Mie_Kocok_Bandung.jpg/375px-Mie_Kocok_Bandung.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="mie-kocok">
+                    <div class="card-body">
+                      <p class="text-bold">Mie Kocok</p>
+                      <p class="card-text">Mi Kocok memiliki rasa yang lebih gurih dan pekat dari Bakso dan itu menjadi
+                        pembeda dan ciri khas dari Mi Kocok.</p>
+                      <p class="text-success">IDR. 30,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nasi_Goreng_Sosis.jpg/375px-Nasi_Goreng_Sosis.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="nasi-goreng">
+                    <div class="card-body">
+                      <p class="text-bold">Nasi Goreng</p>
+                      <p class="card-text">Nasi goreng adalah makanan berupa nasi yang digoreng dan dicampur dalam
+                        minyak goreng, margarin atau mentega.</p>
+                      <p class="text-success">IDR. 13,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Gado_gado.jpg/375px-Gado_gado.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="gado-gado">
+                    <div class="card-body">
+                      <p class="text-bold">Gado-gado</p>
+                      <p class="card-text">Gado-gado adalah makanan khas Jakarta berisi sayur-sayuran rebus, irisan
+                        telur & tahu, dan ditaburi bawang goreng & kerupuk.</p>
+                      <p class="text-success">IDR. 36,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mi_ayam_jamur.JPG/375px-Mi_ayam_jamur.JPG"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="mie-ayam">
+                    <div class="card-body">
+                      <p class="text-bold">Mie Ayam</p>
+                      <p class="card-text">Mie Ayam adalah hidangan Indonesia yang terbuat dari mie gandum, dibumbui
+                        dengan daging ayam yang biasanya dipotong dadu.</p>
+                      <p class="text-success">IDR. 20,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bakso_mi_bihun.jpg/375px-Bakso_mi_bihun.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="bakso">
+                    <div class="card-body">
+                      <p class="text-bold">Bakso</p>
+                      <p class="card-text">Bakso adalah jenis bola daging yang ditemukan di Indonesia. Bakso umumnya
+                        dibuat dari campuran daging sapi giling dan tepung tapioka.</p>
+                      <p class="text-success">IDR. 19,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img
+                      src="https://asset.kompas.com/crops/nsueiJRoh-BTF94-Y71Nv0f3Zj0=/3x0:700x465/780x390/data/photo/2020/12/30/5fec5602f116e.jpg"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="ayam-bakar">
+                    <div class="card-body">
+                      <p class="text-bold">Ayam Bakar</p>
+                      <p class="card-text">Ayam bakar adalah sebuah hidangan Asia Tenggara Maritim, terutama hidangan
+                        Indonesia atau Malaysia, dari ayam yang dipanggang di atas arang.</p>
+                      <p class="text-success">IDR. 25,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                  <div class="card p-2" style="width: 18rem;">
+                    <img src="https://www.bango.co.id/gfx/tips/tips_1424435038.jpg?v=2"
+                      style="height: 200px; background-size:cover;" class="card-img-top img-fluid" alt="mangut-lele">
+                    <div class="card-body">
+                      <p class="text-bold">Mangut Lele</p>
+                      <p class="card-text">Mangut lele adalah kuliner Yogyakarta. Masakan Jawa ini menggunakan bahan
+                        dasar ikan lele dan selalu disajikan sebagai hidangan bagi para raja Keraton.</p>
+                      <p class="text-success">IDR. 25,000/porsi</p>
+                      <div class="rate d-flex">
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star text-warning"></i>
+                        <i class="fa fa-star-half text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panorama p-4" id="panorama">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-8 p-4">
+          <div class="card">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="fade-right"
+              data-aos-duration="3000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://asset.kompas.com/crops/f4_gIxZ9PlhETxkkUoyCCtfYrHA=/314x71:5612x3604/750x500/data/photo/2022/08/14/62f8d5b899530.jpg"
+                    class="d-block w-100" style="height: 400px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p class="text-title">IDN Indoor Café & Resto</p>
+                    <p>Suasana café & resto didalam ruangan</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn-asset.jawapos.com/wp-content/uploads/2022/09/lieps-cafe.jpg"
+                    class="d-block w-100" style="height: 400px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p class="text-title">IDN Outdoor Café</p>
+                    <p>Suasana café & resto diluar ruangan</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://1.bp.blogspot.com/-NWpepo_Rw-s/XYo4lPnx3sI/AAAAAAAAEFI/VUVSc5iTCPYBw_f_G40W1DW8Vlczm-LmwCLcBGAsYHQ/w1200-h630-p-k-no-nu/Lokasi-Heha-Sky-View.jpg"
+                    class="d-block w-100" style="height: 400px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p class="text-title">Suasana Sky view di café & resto</p>
+                    <p>Suasana view di lantai atas café & resto</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-4" data-aos="fade-left" data-aos-duration="3000">
+          <p class="text-title text-uppercase">idn <span class="text-info">Panorama</span></p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus quidem quia deserunt nihil, vitae labore
+            qui vel et. Numquam iusto labore laudantium eum iste id eligendi neque tenetur ducimus, aut, inventore
+            voluptate consequatur. Distinctio, similique perspiciatis. Laborum officia dolore sint. Ipsa voluptatibus
+            dolore sapiente, assumenda mollitia aperiam harum molestiae esse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking p-4" id="booking">
+    <div class="container">
+      <p class="text-title d-flex justify-content-center">Book <span class="text-info">Table</span></p>
+      <div class="card p-4">
+        <form action="#" method="post">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="floatingInput" placeholder="date">
+                <label for="floatingInput">Booking Dates</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-floating mb-3">
+                <input type="time" class="form-control" id="floatingInput" placeholder="time">
+                <label for="floatingInput">Time</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="party">
+                <label for="floatingInput">Party</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="floatingInput" placeholder="name">
+                <label for="floatingInput">Name</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="time">
+                <label for="floatingInput">Phone</label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Choose Panorama</option>
+                  <option value="1">Skyview café</option>
+                  <option value="2">Indoor café</option>
+                  <option value="3">Outdoor café</option>
+                </select>
+                <label for="floatingSelect">Panorama</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-info mt-2 form-control text-white">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="panel-content d-flex align-items-center">
+      <div class="container p-4">
+        <div class="row mt-2">
+          <div class="col-md-6 mt-2" style="overflow-y: hidden;">
+            <div class="card" data-aos="fade-up" data-aos-duration="3000">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.6574930901684!2d107.03967643925509!3d-6.525241450353248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMK%20IDN%20Boarding%20School!5e0!3m2!1sid!2sid!4v1667530669620!5m2!1sid!2sid"
+                width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 mt-2" data-aos="fade-down" data-aos-duration="3000">
+            <div class="card p-4 text-uppercase">
+              <p class="text-title">Get In Touch</p>
+              <table class="table bordeless">
+                <tr>
+                  <td>phone</td>
+                  <td>:</td>
+                  <td>081280040100</td>
+                </tr>
+                <tr>
+                  <td>email</td>
+                  <td>:</td>
+                  <td class="text-lowercase">idncafé@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>address</td>
+                  <td>:</td>
+                  <td>Jl. Raya Dayeuh, Sukanegara, Kec. Jonggol</td>
+                </tr>
+              </table>
+              <div class="sosmed d-flex justify-content-center">
+                <i class="bg-primary text-white fa fa-facebook rounded p-4 m-1"></i>
+                <i class="bg-info text-white fa fa-twitter rounded p-4 m-1"></i>
+                <i class="bg-danger text-white fa fa-instagram rounded p-4 m-1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white d-flex justify-content-center align-items-center p-4">
+    <p>&copy made by <i class="fa fa-heart text-danger"></i>develop by Fawaz Al Fajr | 2022</p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
